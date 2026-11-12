@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'Space Mono', monospace;
+    --font-arabic: 'Cairo', sans-serif;
+  }
+
+  html, body {
+    font-family: var(--font-body);
+    background-color: #f6f6f2;
+    color: #121212;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-arabic {
+  font-family: var(--font-arabic);
+}
+
+/* Drafting / Graph Paper grid background */
+.bg-graph-paper {
+  background-color: #f7f7f4;
+  background-image: 
+    linear-gradient(to right, rgba(26, 26, 26, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(26, 26, 26, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.bg-dark-grid {
+  background-color: #0c0c0e;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Red outline sticker effect for cutout photo */
+.sticker-cutout-red {
+  filter: drop-shadow(0 0 1px #dc2626) drop-shadow(0 0 8px rgba(220, 38, 38, 0.65));
+}
+
+/* Washi / Masking tape effect */
+.masking-tape {
+  background: rgba(245, 245, 235, 0.85);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  backdrop-filter: blur(2px);
+}
